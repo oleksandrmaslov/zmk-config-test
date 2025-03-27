@@ -2,6 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: halfdane
+      url-base: https://github.com/halfdane
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -9,5 +15,25 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-input-gestures
+      remote: oleksandrmaslov
+      revision: peripheral
+      # Add these if you want to use absolute mode:
+    - name: zmk-input-processors
+      remote: halfdane
+      revision: main
+    - name: cirque-input-module
+      remote: halfdane
+      revision: absolute_mode
+    - name: zmk-behavior-insomnia
+      remote: badjeff
+      revision: main
+    - name: zmk-behavior-key-tempo
+      remote: badjeff
+      revision: main
+    - name: zmk-behavior-mouse-key-toggle
+      remote: badjeff
+      revision: main
+
   self:
     path: config
