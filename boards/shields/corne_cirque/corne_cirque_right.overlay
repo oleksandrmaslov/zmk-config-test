@@ -27,7 +27,7 @@
 
 
 &chosen {
-   // zephyr,display-;
+   zephyr,display-;
 };
 
 
