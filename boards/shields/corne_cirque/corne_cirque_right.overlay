@@ -3,7 +3,10 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+#include <behaviors/input_processor_gestures.dtsi>
+#include <behaviors/input_processor_absolute_to_relative.dtsi>
 #include "corne_cirque.dtsi"
 
 &default_transform {
