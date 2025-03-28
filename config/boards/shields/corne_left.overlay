@@ -22,7 +22,7 @@
 };
 
 &chosen {
-  // zephyr,display = &nice_view;
+  zephyr,display = &nice_view;
 };
 
 // nice view bus
