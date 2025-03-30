@@ -190,7 +190,6 @@ nice_view_spi: &spi1 {
             input-processors = <
             &zip_gestures
             &pointer_accel
-            &zip_absolute_to_relative
             &zip_scroll_scaler 1 10
             >;
         // xy-swap;
