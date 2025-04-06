@@ -164,7 +164,7 @@ nice_view_spi: &spi1 {
 };
 
 &pointer_accel {
-    input_type = <INPUT_EV_REL>;
+    input-type = <INPUT_EV_REL>;
     codes = <INPUT_REL_X INPUT_REL_Y>;
     track-remainders;
     min-factor = <800>;        // 0.8x at very slow speeds
