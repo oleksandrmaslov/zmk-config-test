@@ -170,7 +170,7 @@ nice_view_spi: &spi1 {
     max-factor = <3000>;       // 3.0x at fast speeds
     speed-threshold = <1200>;  // 1200 counts/sec for 1x
     speed-max = <6000>;        // 6000 counts/sec for max accel
-    acceleration-exponent = <2>; // quadratic curve
+    acceleration-exponent = <1>; // quadratic curve
 };
 
 / {
