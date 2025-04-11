@@ -16,7 +16,7 @@ manifest:
       revision: peripheral
     - name: zmk-pointing-acceleration
       remote: oleksandrmaslov
-      revision: main
+      revision: test
       # Add these if you want to use absolute mode:
     - name: zmk-input-processors
       remote: halfdane
