@@ -187,9 +187,10 @@ nice_view_spi: &spi1 {
          device = <&glidepoint1>;
             input-processors = <
             &zip_gestures
+            &zip_absolute_to_relative
+            &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
             &pointer_accel
             &zip_scroll_scaler 1 10
-            &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
             >;
         // xy-swap;
         // x-invert;
