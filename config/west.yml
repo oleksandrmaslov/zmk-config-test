@@ -17,6 +17,12 @@ manifest:
     - name: zmk-pointing-acceleration
       remote: oleksandrmaslov
       revision: test
+    - name: zmk-nice-view-hid 
+      remote: zzeneg
+      revision: main
+    - name: zmk-raw-hid 
+      remote: zzeneg
+      revision: main
       # Add these if you want to use absolute mode:
     - name: zmk-input-processors
       remote: halfdane
