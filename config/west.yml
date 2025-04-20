@@ -20,7 +20,7 @@ manifest:
       remote: oleksandrmaslov
       revision: test
     - name: zmk-nice-view-hid 
-      remote: oleksandrmaslov
+      remote: zzeneg
       revision: main
     - name: zmk-raw-hid 
       remote: zzeneg
