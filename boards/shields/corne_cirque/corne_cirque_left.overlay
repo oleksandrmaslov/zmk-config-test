@@ -21,12 +21,6 @@
         ;
 };
 
-/ {
-    chosen {
-        zephyr,display = &nice_view;
-    };
-};
-
 &i2c0 {
     status = "disabled";
     glidepoint0: glidepoint@2a {
