@@ -30,6 +30,14 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
         };
+
+        off: off {
+            compatible = "zmk,behavior-soft-off";
+            label = "OFF";
+            #binding-cells = <0>;
+            hold-time-ms = <5000>;
+            split-peripheral-off-on-press;
+        };
     };
 
     keymap {
@@ -43,7 +51,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q           &kp W           &kp E                 &kp R             &kp T          &kp Y        &kp U             &kp I         &kp O                 &mt SQT P               &none
+&off   &kp Q           &kp W           &kp E                 &kp R             &kp T          &kp Y        &kp U             &kp I         &kp O                 &mt SQT P               &none
 &none  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D           &mt LEFT_SHIFT F  &kp G          &kp H        &mt LEFT_SHIFT J  &mt LCTRL K   &mt LEFT_ALT L        &mt LEFT_WIN SEMI       &none
 &none  &kp Z           &kp X           &kp C                 &kp V             &kp B          &kp N        &kp M             &kp COMMA     &mt LEFT_BRACKET DOT  &mt RIGHT_BRACKET FSLH  &none
                                        &lt 1 LA(LEFT_SHIFT)  &lt 2 TAB         &lt 3 SPACE    &lt 4 ENTER  &kp BACKSPACE     &lt 5 ESCAPE
