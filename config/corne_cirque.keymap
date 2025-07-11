@@ -30,6 +30,14 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
         };
+
+        soft_off: soft_off {
+            compatible = "zmk,behavior-soft-off";
+            label = "SOFT_OFF";
+            #binding-cells = <0>;
+            hold-time-ms = <5000>;
+            split-peripheral-off-on-press;
+        };
     };
 
     keymap {
