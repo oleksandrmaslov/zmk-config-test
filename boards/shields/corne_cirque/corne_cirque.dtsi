@@ -152,7 +152,9 @@ nice_view_spi: &spi1 {
         active-low;
     };
     };
+    };
 
+/ {
 / {
     keys {
         compatible = "gpio-keys";
