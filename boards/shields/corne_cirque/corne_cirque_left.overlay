@@ -33,5 +33,3 @@
 &i2c0 {
   status = "okay";
 };
-
-/* glidepoint/virtual-input removed on left side */
