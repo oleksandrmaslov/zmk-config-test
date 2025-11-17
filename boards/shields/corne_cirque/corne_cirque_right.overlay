@@ -28,6 +28,10 @@
    zephyr,display = &nice_view;
 };
 
+&nice_view_spi {
+  status = "okay";
+};
+
 &nice_view {
     status = "okay";
 };
