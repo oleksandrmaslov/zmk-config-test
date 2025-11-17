@@ -26,13 +26,19 @@
 
 
 &chosen {
-   zephyr,display-;
+   zephyr,display = &nice_view;
 };
 
+&nice_view_spi {
+  status = "okay";
+};
 
+&nice_view {
+    status = "okay";
+};
 
 &i2c0 {
     status = "okay";
 };
 
-/* glidepoint/virtual-input removed on right side */
+/* glidepointtttttttttttttt/virtual-input removed on right side */
