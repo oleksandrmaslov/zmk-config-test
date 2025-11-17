@@ -29,7 +29,7 @@
 };
 
 &nice_view {
-    status = "disabled";
+    status = "okay";
 };
 
 
