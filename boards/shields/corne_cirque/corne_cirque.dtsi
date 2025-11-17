@@ -125,26 +125,23 @@ nice_view_spi: &spi1 {
 };
 
 /* Trackpad removed: input-listener nodes omitted */
-
 / {
-  long_press_wake: long_press_wake {
-    compatible = "zmk,long-press-wake";
-
-    /* Dedicated power / wake key */
-    wake-gpios = <&gpio0 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-    /* Require 3s hold */
-    required-hold-ms = <3000>;
-
-    /* Allow skipping long-press when on USB power */
-    bypass-on-usb;
-  };
+    long_press_wake: long_press_wake {
+        compatible = "zmk,long-press-wake";
+        wake-gpios = <&gpio0 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        required-hold-ms = <3000>;
+        bypass-on-usb;
+        // ext-power-gpios = <&gpioX Y GPIO_ACTIVE_HIGH>;
+        // ext-power-on-delay-ms = <50>;
+    };
 };
 
 / {
-  keys {
+    keys {
         compatible = "gpio-keys";
+
         soft_off_gpio_key: soft_off_gpio_key {
-            gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            gpios = <&gpio0 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
         };
     };
 
@@ -153,7 +150,7 @@ nice_view_spi: &spi1 {
             compatible = "zmk,behavior-soft-off";
             #binding-cells = <0>;
             split-peripheral-off-on-press;
-            hold-time-ms = <5000>;
+            hold-time-ms = <3000>;
         };
     };
 
