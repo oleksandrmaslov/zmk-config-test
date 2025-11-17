@@ -131,6 +131,7 @@ nice_view_spi: &spi1 {
         wake-gpios = <&gpio0 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
         required-hold-ms = <3000>;
         bypass-on-usb;
+        active-low;
         // ext-power-gpios = <&gpioX Y GPIO_ACTIVE_HIGH>;
         // ext-power-on-delay-ms = <50>;
     };
