@@ -24,7 +24,6 @@
         ;
 };
 
-
 &chosen {
    zephyr,display = &nice_view;
 };
