@@ -24,11 +24,13 @@
         ;
 };
 
-
 &chosen {
-   zephyr,display-;
+   zephyr,display = &nice_view;
 };
 
+&nice_view {
+    status = "disabled";
+};
 
 
 &i2c0 {
